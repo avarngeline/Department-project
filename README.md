@@ -3,9 +3,9 @@
 
 ## Executive Summary
 
-This report analyses the issue of Late Export Declarations within the Marketing Department, which significantly impacted the BOI stock adjustment process and compliance with Thai Customs regulations. The late submission of export declarations led to inefficiencies, delayed stock adjustments, and potential risks of penalties and lost tax benefits.
+This report analyses the issue of Late Export Declarations within the Marketing Department, which significantly impacted the BOI stock adjustment process and compliance with Thai Customs regulations. The late submission of export declarations led to inefficiencies, delayed stock adjustments, and potential risks of penalties and lost tax benefits. The findings from this study highlight that late export declarations were primarily concentrated in air shipments with short lead times, particularly for MB Japan. 
 
-Through a root cause analysis using a Fishbone Diagram, the primary reasons for these delays were identified, including lack of assigned responsibility, incorrect information in export declarations, unclear workflows, and system malfunctions. The Marketing Department addressed these challenges by implementing a structured action plan based on the 5W1H methodology, focusing on process improvements, responsibility assignments, and workflow optimisation.
+Through a root cause analysis using a Fishbone Diagram, the primary reasons for these delays were identified, including lack of assigned responsibility, incorrect information in export declarations, and unclear workflows. The Marketing Department addressed these challenges by implementing a structured action plan based on the 5W1H methodology, focusing on process improvements, responsibility assignments, and workflow optimisation.
 
 A testing period was conducted from January to March 2020, and the results demonstrated a 100% reduction in Late Export Declarations, from 149 cases (7.5%) in Q4 2019 to 0 cases in Q1 2020. The implementation of automated reminders, improved amendment handling, early validation, and streamlined data collection for BOI submission played a crucial role in ensuring smoother operations and sustained compliance.
 
@@ -48,7 +48,7 @@ Through a thorough analysis of the Marketing department's operational issues, it
 The Marketing Department believes that this issue can be effectively addressed internally through better management of the export declaration process. By improving BOI stock adjustments and ensuring timely submission of export declarations, the department can reduce delays, optimise compliance, and ultimately enhance operational efficiency.
 
 ### 1.3. Project Objective
-The main objective of this project is to address and resolve the issue of late return of export declarations that has been disrupting the BOI stock adjustment process and affecting overall operational efficiency. The key goals are:
+The main objective of this project is to address and resolve the issue of late export declarations that has been disrupting the BOI stock adjustment process and affecting overall operational efficiency. The key goals are:
 
 - Analyse the Root Cause: Investigate the underlying reasons for the delays in export declarations and their impact on the BOI stock adjustment process.
 
@@ -73,17 +73,17 @@ The dataset includes the following columns:
 | **Leadtime (Days)**    | Number of days from shipment to arrival.                                                                      |
 | **Currency**           | Currency used for the transaction.                                                                            |
 | **Destination**        | Country or location of the shipment destination.                                                              |
-| **Transportation**     | Mode of transportation (air, sea, road).                                                                      |
+| **Transportation**     | Mode of transportation (air or sea).                                                                      |
 | **Term**               | Payment or delivery terms (e.g., FOB, CIF).                                                                   |
 | **Origin**             | Country or location where the goods originate.                                                                |
 | **Vessel**             | Name of the vessel (sea) or flight (air).                                                                     |
-| **Airfreight**         | Air shipping cost or amount (if applicable).                                                                   |
+| **Airfreight**         | This is an airfreight shipment.                                                                   |
 | **CnSize 20F**         | Quantity of 20-foot containers used.                                                                          |
 | **CnSize 40F**         | Quantity of 40-foot containers used.                                                                          |
 | **CnSize 40FH**        | Quantity of 40-foot high-cube containers used.                                                                 |
 | **LCL**                | Shipments that do not fill a full container.                                                                  |
-| **Export Declaration** | Status of the export declaration (on time or late).                                                           |
-| **Shipping Errors**    | Type of error in shipping (e.g., late export declaration, transportation delay).                              |
+| **Export Declaration** | The export declaration numbers.                                                          |
+| **Shipping Errors**    | Type of error in shipping (e.g., late export declarations, airfreight due to production delay).                |
 
 
 
@@ -91,7 +91,7 @@ The dataset includes the following columns:
 
 | **Column Name**        | **Description**                                                                                               |
 |------------------------|---------------------------------------------------------------------------------------------------------------|
-| **SEQ**                | Unique identifier for each export transaction.                                                                |
+| **SEQ**                | Unique identifier for each Export Declarations.                                                                |
 | **Invoice Ref**        | Reference number for the export invoice.                                                                      |
 | **ETD**                | Estimated time of departure from the origin.                                                                  |
 | **Reference No.**      | Internal tracking reference for the export shipment.                                                           |
@@ -117,15 +117,20 @@ The dataset includes the following columns:
 
 ![Image](https://github.com/user-attachments/assets/67f7124f-1471-4e28-b163-c436a865a2bb)
 
-- Air shipments have the highest number of Late Export Declarations (85 cases, 57.05%) compared to sea shipments (64 cases, 42.95%).
+- Air shipments have the highest number of Late Export Declarations (85 cases, 58%) compared to sea shipments (61 cases, 42%).
 - Since Air shipments have more delays, this suggests potential issues such as last-minute document processing, customs clearance delays, or tight shipping schedules.
-- Even though Sea shipments have fewer late declarations, they still contribute significantly (almost 43%), meaning there may be inefficiencies in sea freight scheduling or documentation as well."							
+- Even though Sea shipments have fewer late declarations, they still contribute significantly (almost 42%), meaning there may be inefficiencies in sea freight scheduling or documentation as well."							
 ### 2.4. Late Export Declarations by Leadtime
 ![Image](https://github.com/user-attachments/assets/4e9ff2ab-b2a1-4576-9720-249b25bd2306)
 
 - The majority of Late Export Declarations occur within short lead times (3 to 7 days), which corresponds to the lead time of air shipments.
 - 3-day lead time has the highest number (85 cases), followed by 7 days (22 cases) and 8 days (17 cases).
-- As the lead time increases beyond 10 days, the number of late declarations significantly decreases.						
+- As the lead time increases beyond 10 days, the number of late declarations significantly decreases.	
+
+
+Given that the majority of late export declarations occur in air shipments with a three-day lead time, particularly for MB Japan, it is critical to investigate the underlying causes. The following Root Cause Analysis will break down these issues to determine necessary corrective actions.
+
+
 ## 3. Root Cause Analysis
 ### 3.1. Fishbone Diagram
 
@@ -138,13 +143,15 @@ The dataset includes the following columns:
 
 A Fishbone Diagram is used to analyse root causes by visualising four categories: Manpower, Material, Method, and Machine as shown below.
 
-![Image](https://github.com/user-attachments/assets/89393ae3-ac45-46dd-bd4b-0eba14a318d7)
+![Image](https://github.com/user-attachments/assets/7ad5f67f-fed1-4604-ba07-6b10c4613a0a)
 
 **Structure**
 
-![Image](https://github.com/user-attachments/assets/84ee6eef-67df-4340-9dea-881e6b40c0e6)
+![Image](https://github.com/user-attachments/assets/d50a1554-4b34-4377-973b-b920cfd06a4a)
 
-The delay in Export Declarations is primarily caused by **the lack of assigned responsibility**, where no designated person follows up, leading to process inefficiencies. Additionally, **incorrect information in Export Declarations**, often due to changes in shipping details like vessel delays, results in frequent corrections and slows down approvals. Furthermore, **an unclear workflow**, with no standardised guidelines and lengthy follow-up timeframes, contributes to the delays. These issues can be effectively resolved internally by the Marketing Department through process improvement, clear responsibility assignment, and improved coordination.
+The delay in export declarations is primarily caused by the **lack of assigned responsibility**, with no designated person to follow up—especially for urgent shipments with a three-day lead time to MB Japan—leading to process inefficiencies. Additionally, **incorrect information** in export declarations, often due to changes in shipping details such as vessel delays, results in frequent corrections and slows down approvals. 
+
+Furthermore, **an unclear workflow**, the absence of standardised guidelines, and lengthy follow-up timeframes contribute to the delays. These issues can be effectively resolved internally by the Marketing Department through process improvements, clear responsibility assignments, and enhanced coordination..
 
 ### 3.2. Root Cause Validation
 
