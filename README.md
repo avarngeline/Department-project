@@ -3,9 +3,9 @@
 
 ## Executive Summary
 
-This report analyses the issue of Late Export Declarations within the Marketing Department, which significantly impacted the BOI stock adjustment process and compliance with Thai Customs regulations. The late submission of export declarations led to inefficiencies, delayed stock adjustments, and potential risks of penalties and lost tax benefits. The findings from this study highlight that late export declarations were primarily concentrated in air shipments with short lead times, particularly for MB Japan. 
+This report analyses the issue of Late Export Declarations within the Marketing Department, which significantly impacted the BOI stock adjustment process and compliance with Thai Customs regulations. The late submission of Export Declarations led to inefficiencies, delayed stock adjustments, and potential risks of penalties and lost tax benefits. The findings from this study highlight that late Export Declarations were primarily concentrated in air shipments with short lead times, particularly for MB Japan. 
 
-Through a root cause analysis using a Fishbone Diagram, the primary reasons for these delays were identified, including lack of assigned responsibility, incorrect information in export declarations, and unclear workflows. The Marketing Department addressed these challenges by implementing a structured action plan based on the 5W1H methodology, focusing on process improvements, responsibility assignments, and workflow optimisation.
+Through a root cause analysis using a Fishbone Diagram, the primary reasons for these delays were identified, including lack of assigned responsibility, incorrect information in Export Declarations, and unclear workflows. The Marketing Department addressed these challenges by implementing a structured action plan based on the 5W1H methodology, focusing on process improvements, responsibility assignments, and workflow optimisation.
 
 A testing period was conducted from January to March 2020, and the results demonstrated a 100% reduction in Late Export Declarations, from 149 cases (7.5%) in Q4 2019 to 0 cases in Q1 2020. The implementation of automated reminders, improved amendment handling, early validation, and streamlined data collection for BOI submission played a crucial role in ensuring smoother operations and sustained compliance.
 
@@ -36,25 +36,25 @@ A testing period was conducted from January to March 2020, and the results demon
 ## 1. Introduction
 ### 1.1. Overview
 
-In Thailand, export declarations are essential for ensuring that businesses comply with customs regulations and facilitate the smooth movement of goods across borders. They serve as a legal requirement for all exports and are integral to maintaining compliance with Thai Customs Law and international trade regulations.
+In Thailand, Export Declarations are essential for ensuring that businesses comply with customs regulations and facilitate the smooth movement of goods across borders. They serve as a legal requirement for all exports and are integral to maintaining compliance with Thai Customs Law and international trade regulations.
 
-For companies benefiting from BOI (Board of Investment) privileges, export declarations are even more important. They allow businesses to access tax exemptions, import duty reductions, and other trade incentives under the BOI program. These declarations ensure that companies can correctly adjust their BOI stock and maintain eligibility for privileges like VAT exemptions and corporate income tax reductions.
+For companies benefiting from BOI (Board of Investment) privileges, Export Declarations are even more important. They allow businesses to access tax exemptions, import duty reductions, and other trade incentives under the BOI program. These declarations ensure that companies can correctly adjust their BOI stock and maintain eligibility for privileges like VAT exemptions and corporate income tax reductions.
 
-By submitting accurate and timely export declarations, companies not only avoid the risk of fines, delays, or penalties but also streamline their operations. They can ensure that all tax exemptions and customs benefits are properly claimed, making their supply chain more efficient and competitive. Furthermore, proper export declarations provide essential documentation for stock adjustments related to BOI requirements, ensuring that any goods imported duty-free and used for export production are correctly accounted for in the company's records.
+By submitting accurate and timely Export Declarations, companies not only avoid the risk of fines, delays, or penalties but also streamline their operations. They can ensure that all tax exemptions and customs benefits are properly claimed, making their supply chain more efficient and competitive. Furthermore, proper Export Declarations provide essential documentation for stock adjustments related to BOI requirements, ensuring that any goods imported duty-free and used for export production are correctly accounted for in the company's records.
 
 ### 1.2. Problem Statement
 Through a thorough analysis of the Marketing department's operational issues, it has been identified that the late Export Declarations is a significant contributor to many of the challenges impacting the BOI stock adjustment process. These delays not only disrupt the accurate reporting and adjustment of imported goods under BOI privileges but may also result in customs-related penalties and missed tax exemptions.
 
-The Marketing Department believes that this issue can be effectively addressed internally through better management of the export declaration process. By improving BOI stock adjustments and ensuring timely submission of export declarations, the department can reduce delays, optimise compliance, and ultimately enhance operational efficiency.
+The Marketing Department believes that this issue can be effectively addressed internally through better management of the Export Declaration process. By improving BOI stock adjustments and ensuring timely submission of Export Declarations, the department can reduce delays, optimise compliance, and ultimately enhance operational efficiency.
 
 ### 1.3. Project Objective
-The main objective of this project is to address and resolve the issue of late export declarations that has been disrupting the BOI stock adjustment process and affecting overall operational efficiency. The key goals are:
+The main objective of this project is to address and resolve the issue of late Export Declarations that has been disrupting the BOI stock adjustment process and affecting overall operational efficiency. The key goals are:
 
-- Analyse the Root Cause: Investigate the underlying reasons for the delays in export declarations and their impact on the BOI stock adjustment process.
+- Analyse the Root Cause: Investigate the underlying reasons for the delays in Export Declarations and their impact on the BOI stock adjustment process.
 
-- Develop and Implement Solutions: Identify and implement practical solutions to eliminate delays and improve the timeliness and accuracy of export declarations.
+- Develop and Implement Solutions: Identify and implement practical solutions to eliminate delays and improve the timeliness and accuracy of Export Declarations.
 
-- Improve Operational Efficiency: Streamline the export declaration process to minimise disruptions, reduce redundant process, and ensure smoother BOI stick adjustment.
+- Improve Operational Efficiency: Streamline the Export Declaration process to minimise disruptions, reduce redundant process, and ensure smoother BOI stick adjustment.
 
 ### 1.4. Data Description
 The dataset includes the following columns:
@@ -82,8 +82,8 @@ The dataset includes the following columns:
 | **CnSize 40F**         | Quantity of 40-foot containers used.                                                                          |
 | **CnSize 40FH**        | Quantity of 40-foot high-cube containers used.                                                                 |
 | **LCL**                | Shipments that do not fill a full container.                                                                  |
-| **Export Declaration** | The export declaration numbers.                                                          |
-| **Shipping Errors**    | Type of error in shipping (e.g., late export declarations, airfreight due to production delay).                |
+| **Export Declaration** | The Export Declaration numbers.                                                          |
+| **Shipping Errors**    | Type of error in shipping (e.g., Late Export Declarations, Airfreight due to Production Delay).                |
 
 
 
@@ -95,7 +95,7 @@ The dataset includes the following columns:
 | **Invoice Ref**        | Reference number for the export invoice.                                                                      |
 | **ETD**                | Estimated time of departure from the origin.                                                                  |
 | **Reference No.**      | Internal tracking reference for the export shipment.                                                           |
-| **Declaration No.**    | Unique identifier for the export declaration filed with customs.                                              |
+| **Declaration No.**    | Unique identifier for the Export Declaration filed with customs.                                              |
 
 ## 2. Key Findings
 
@@ -128,7 +128,7 @@ The dataset includes the following columns:
 - As the lead time increases beyond 10 days, the number of late declarations significantly decreases.	
 
 
-Given that the majority of late export declarations occur in air shipments with a three-day lead time, particularly for MB Japan, it is critical to investigate the underlying causes. The following Root Cause Analysis will break down these issues to determine necessary corrective actions.
+Given that the majority of late Export Declarations occur in air shipments with a three-day lead time, particularly for MB Japan, it is critical to investigate the underlying causes. The following Root Cause Analysis will break down these issues to determine necessary corrective actions.
 
 
 ## 3. Root Cause Analysis
@@ -136,7 +136,7 @@ Given that the majority of late export declarations occur in air shipments with 
 
 **Purpose**			
 
-- This Fishbone Diagram aims to identify, analyse, and visually map out the potential factors contributing to the root cause of late export declarations for shipments between October and December 2019.			
+- This Fishbone Diagram aims to identify, analyse, and visually map out the potential factors contributing to the root cause of late Export Declarations for shipments between October and December 2019.			
 - It helps break down complex issues into more manageable components for effective problem-solving.
   
 **Diagram**
@@ -149,7 +149,7 @@ A Fishbone Diagram is used to analyse root causes by visualising four categories
 
 ![Image](https://github.com/user-attachments/assets/d50a1554-4b34-4377-973b-b920cfd06a4a)
 
-The delay in export declarations is primarily caused by the **lack of assigned responsibility**, with no designated person to follow up—especially for urgent shipments with a three-day lead time to MB Japan—leading to process inefficiencies. Additionally, **incorrect information** in export declarations, often due to changes in shipping details such as vessel delays, results in frequent corrections and slows down approvals. 
+The delay in Export Declarations is primarily caused by the **lack of assigned responsibility**, with no designated person to follow up—especially for urgent shipments with a three-day lead time to MB Japan—leading to process inefficiencies. Additionally, **incorrect information** in Export Declarations, often due to changes in shipping details such as vessel delays, results in frequent corrections and slows down approvals. 
 
 Furthermore, **an unclear workflow**, the absence of standardised guidelines, and lengthy follow-up timeframes contribute to the delays. These issues can be effectively resolved internally by the Marketing Department through process improvements, clear responsibility assignments, and enhanced coordination..
 
@@ -164,7 +164,7 @@ The 3 Gen Methodology (Genchi, Genbutsu, Genjitsu) is a structured approach used
 
 **Findings**
 
-The causes of the late export declarations occurred across various aspects during the observed period from October to December 2019.
+The causes of the late Export Declarations occurred across various aspects during the observed period from October to December 2019.
 
 ![Image](https://github.com/user-attachments/assets/cddac549-f502-4c50-9bbc-4372f84e2da0)
 
@@ -179,7 +179,7 @@ The **5W1H** (Who, What, When, Where, Why, and How) method is used to create an 
 
 To ensure a structured, comprehensive, and effective approach to problem-solving and implementing solutions for the late Export Declarations issue, including identifying required actions, reasons for taking them, responsible persons, locations and scopes, and the timeframe for execution.						
 
-![Image](https://github.com/user-attachments/assets/3c5823e1-53ac-49fd-9de2-7e8eabbfd504)
+![Image](https://github.com/user-attachments/assets/2f237b8f-7bd2-4f15-bb4f-1857e688bb83)
 
 **The document processing system malfunction remains unaddressed as it falls outside the responsibilities of the Marketing department.
 
@@ -188,9 +188,9 @@ To ensure a structured, comprehensive, and effective approach to problem-solving
 
 
 ### 5.1. AS-IS Process
-![Image](https://github.com/user-attachments/assets/9ab6ed5a-2ebe-406c-b263-a6a7b3fb886a)
+![Image](https://github.com/user-attachments/assets/d161d536-3142-46d6-9acf-a4aa42293ce1)
 
-This process flow represents the existing Export Declaration & BOI Stock Adjustment process, involving Freight Forwarders, Logistics Teams, META, and Thailand BOI.												
+This process flow represents the current Export Declaration follow-up process, involving Freight Forwarder, Logistics Team and BOI Team in the company, and Thailand BOI.											
 												
 **Key Issues Identified**		
 
@@ -202,16 +202,16 @@ This process flow represents the existing Export Declaration & BOI Stock Adjustm
 
 - **End-of-Month Bottleneck**: The BOI Team collects the summary list only at the end of the month, causing a workload surge. If any data is missing or incorrect, the adjustment request cannot proceed, further delaying stock updates.
 
-- **Risk of Inaccuracies**: Since stock adjustment is dependent on correct and complete Export Declarations, any issue can cause inaccurate BOI stock adjustments. The process lacks automation, increasing the chance of human error in manual verification and data entry.
+- **Redundant Back-and-Forth Communication**: The process involves excessive back-and-forth communication between the Logistics Team, the BOI Team, and the Freight Forwarder to resolve missing or incorrect Export Declaration details. This redundancy leads to inefficiencies, delays, and additional workload.
 
 
 ### 5.2. TO-BE Process
 
-![Image](https://github.com/user-attachments/assets/ed7dcd6a-0cd3-4f2e-85f4-40cc2c89cc4b)
+![Image](https://github.com/user-attachments/assets/c04f3227-4b9c-4675-8e8e-e9a44b6224a3)
 
 **Key Improvements**
 
-- **Automated Reminder System**: Instead of relying on manual follow-ups, an automated reminder email is now sent one week before month-end, ensuring timely action.
+- **Automated Reminder**: Instead of relying on manual follow-ups, an automated reminder email is now sent one week before month-end, ensuring timely action.
 
 - **Early Validation of Export Declarations**: The Logistics Team now checks the Export Declaration correctness upon receipt, allowing errors to be identified earlier in the process. If incorrect, an amendment request is immediately sent instead of delaying it until month-end.
 
@@ -227,7 +227,7 @@ This process flow represents the existing Export Declaration & BOI Stock Adjustm
 
 ![Image](https://github.com/user-attachments/assets/631b507d-e6e0-4b71-9396-8526d89d5a03)
 
-- The testing period successfully demonstrated the effectiveness of process improvements in eliminating late export declarations, reducing cases from 149 (7.5%) in Oct-Dec 2019 to 0 in Jan-Mar 2020, achieving a 100% improvement. 
+- The testing period successfully demonstrated the effectiveness of process improvements in eliminating late Export Declarations, reducing cases from 149 (7.5%) in Oct-Dec 2019 to 0 in Jan-Mar 2020, achieving a 100% improvement. 
 - This outcome was achieved through the implementation of a structured action plan, which included assigned responsibilities, enhanced tracking mechanisms, and streamlined workflows.
 
 **Shipping Errors overtime**
